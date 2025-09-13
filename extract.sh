@@ -36,6 +36,10 @@ extract_file() {
 
         if [[ -d "$source" ]]; then
             echo "复制目录: $source -> $target"
+            # 如果目标目录已存在，先删除避免嵌套
+            if [[ -d "$DOTFILES_DIR/$target" ]]; then
+                rm -rf "$DOTFILES_DIR/$target"
+            fi
             cp -r "$source" "$DOTFILES_DIR/$target"
         else
             echo "复制文件: $source -> $target"
