@@ -50,6 +50,8 @@ brew "pkgconf"
 brew "pnpm"
 # 7-Zip is a file archiver with a high compression ratio
 brew "sevenzip"
+# Easiest, most secure way to use WireGuard and 2FA
+brew "tailscale"
 # Feature-rich console based todo list manager
 brew "task"
 # TCP connect to the given IP/port combo
@@ -101,12 +103,12 @@ cask "maccy"
 cask "microsoft-remote-desktop"
 # Intercept, modify, replay, save HTTP/S traffic
 cask "mitmproxy"
+# App to write, plan, collaborate, and get organised
+cask "notion"
 # Open source virtual/remote desktop application
 cask "rustdesk"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
-# Mesh VPN based on WireGuard
-cask "tailscale-app"
 # Messaging app with a focus on speed and security
 cask "telegram"
 # Open-source code editor
