@@ -16,7 +16,7 @@ config = {
 	font = wezterm.font("JetBrains Mono", { weight = "Bold" }),
 	font_size = 14,
 
-    -- default_cursor_style = "BlinkingBar",
+    default_cursor_style = "SteadyBar",
 	-- color_scheme = "Catppuccin Mocha",
 	color_scheme = "Monokai Pro (Gogh)",
 	macos_window_background_blur = 70,

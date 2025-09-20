@@ -76,8 +76,9 @@ source "$ITEM_DIR/mail.sh"
 # sketchybar --add alias "截屏,Item-0" right \
 #            --set "截屏,Item-0" update_freq=2
 
-sketchybar --add alias "控制中心,FocusModes" right \
-           --set "控制中心,FocusModes" alias.color=0xd061f5a2
+# sketchybar --add alias "控制中心,FocusModes" right \
+#            --set "控制中心,FocusModes" alias.color=0xd061f5a2
+
 
 ##### Force all scripts to run the first time (never do this in a script) #####
 sketchybar --update

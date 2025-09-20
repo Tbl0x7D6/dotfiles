@@ -3,3 +3,12 @@ set tabstop=4
 set shiftwidth=4
 set smarttab
 set expandtab
+
+" Mode settings:
+let &t_SI.="\e[6 q" " SI = INSERT mode (solid vertical bar)
+let &t_SR.="\e[2 q" " SR = REPLACE mode (steady block)
+let &t_EI.="\e[2 q" " EI = NORMAL mode (steady block)
+augroup myCmds
+au!
+autocmd VimEnter * silent !echo -ne "\e[2 q"
+augroup END
