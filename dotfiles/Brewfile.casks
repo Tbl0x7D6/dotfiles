@@ -1,3 +1,4 @@
+alt-tab
 cherry-studio
 clash-verge-rev
 deskflow
@@ -5,6 +6,7 @@ discord
 easydict
 font-fira-code-nerd-font
 font-jetbrains-mono-nerd-font
+font-maple-mono-nf-cn
 font-sf-pro
 font-sketchybar-app-font
 font-source-code-pro
@@ -13,13 +15,13 @@ iina
 input-source-pro
 karabiner-elements
 localsend
-logseq
 maccy
 microsoft-remote-desktop
 mitmproxy
 notion
 rustdesk
 sf-symbols
+tailscale-app
 telegram
 visual-studio-code
 wezterm

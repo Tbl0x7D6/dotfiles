@@ -13,7 +13,7 @@ sudo yabai --load-sa
 
 # global settings
 yabai -m config                                 \
-    external_bar                 all:42:0       \
+    external_bar                 all:0:0        \
     menubar_opacity              1.0            \
     mouse_follows_focus          off            \
     focus_follows_mouse          off            \
@@ -33,23 +33,17 @@ yabai -m config                                 \
     split_ratio                  0.50           \
     split_type                   auto           \
     auto_balance                 off            \
-    top_padding                  12             \
-    bottom_padding               12             \
-    left_padding                 12             \
-    right_padding                12             \
-    window_gap                   06             \
+    top_padding                  0             \
+    bottom_padding               0             \
+    left_padding                 0             \
+    right_padding                0             \
+    window_gap                   0             \
     layout                       bsp            \
     mouse_modifier               fn             \
     mouse_action1                move           \
     mouse_action2                resize         \
     mouse_drop_action            swap
 
-yabai -m rule --add app="^系统设置$" manage=off
-yabai -m rule --add app="^活动监视器$" manage=off
-yabai -m rule --add app="^邮件$" manage=off
-yabai -m rule --add app="^Cherry Studio$" manage=off space=$(yabai -m query --spaces --space | jq .index)
-yabai -m rule --add app="^Karabiner-Elements$" manage=off
-yabai -m rule --add app="^RustDesk$" manage=off
-yabai -m rule --add app="^Clash Verge$" manage=off
+yabai -m config layout float
 
 echo "yabai configuration loaded.."

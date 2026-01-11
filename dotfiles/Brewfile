@@ -12,6 +12,8 @@ brew "glib"
 brew "clipboard"
 # Cross-platform make
 brew "cmake"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
 # Disk Usage/Free Utility - a better 'df' alternative
 brew "duf"
 # Static file server
@@ -26,50 +28,62 @@ brew "fd"
 brew "harfbuzz"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# X11 implementation of the Remote Desktop Protocol (RDP)
+brew "freerdp"
+# Kubernetes package manager
+brew "helm"
 # Improved top (interactive process viewer)
 brew "htop"
 # Update of iperf: measures TCP, UDP, and SCTP bandwidth
 brew "iperf3"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
 # Simple terminal UI for git commands
 brew "lazygit"
 # Graphical front-end for GCC's coverage testing tool (gcov)
 brew "lcov"
+# Provides library functionality for FIDO U2F & FIDO 2.0, including USB
+brew "libfido2"
 # Next-gen compiler infrastructure
 brew "llvm"
 # Mac App Store command-line interface
 brew "mas"
 # Port scanning utility for large networks
 brew "nmap"
-# Platform built on V8 to build network applications
+# Open-source, cross-platform JavaScript runtime environment
 brew "node"
+# OpenBSD freely-licensed SSH connectivity tools
+brew "openssh"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Fast, disk space efficient package manager
 brew "pnpm"
 # 7-Zip is a file archiver with a high compression ratio
 brew "sevenzip"
-# Easiest, most secure way to use WireGuard and 2FA
-brew "tailscale"
 # Feature-rich console based todo list manager
 brew "task"
 # TCP connect to the given IP/port combo
 brew "tcping"
 # Modernized, complete, self-contained TeX/LaTeX engine
 brew "tectonic"
+# Implementation of the Language Server Protocol for LaTeX
+brew "texlab"
 # Simplified and community-driven man pages
 brew "tldr"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Markup-based typesetting system
 brew "typst"
+# Internet file retriever
+brew "wget"
 # Blazing fast terminal file manager written in Rust, based on async I/O
 brew "yazi"
-# Custom macOS statusbar with shell plugin, interaction and graph support
-brew "felixkratz/formulae/sketchybar"
 # A tiling window manager for macOS based on binary space partitioning.
 brew "koekeishiya/formulae/yabai"
+# Enable Windows-like alt-tab
+cask "alt-tab"
 # Desktop client that supports multiple LLM providers
 cask "cherry-studio"
 # Continuation of Clash Verge - A Clash Meta GUI based on Tauri
@@ -82,6 +96,7 @@ cask "discord"
 cask "easydict"
 cask "font-fira-code-nerd-font"
 cask "font-jetbrains-mono-nerd-font"
+cask "font-maple-mono-nf-cn"
 cask "font-sf-pro"
 cask "font-sketchybar-app-font"
 cask "font-source-code-pro"
@@ -95,8 +110,6 @@ cask "input-source-pro"
 cask "karabiner-elements"
 # Open-source cross-platform alternative to AirDrop
 cask "localsend"
-# Privacy-first, open-source platform for knowledge sharing and management
-cask "logseq"
 # Clipboard manager
 cask "maccy"
 # Remote desktop client
@@ -109,6 +122,8 @@ cask "notion"
 cask "rustdesk"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
+# Mesh VPN based on WireGuard
+cask "tailscale-app"
 # Messaging app with a focus on speed and security
 cask "telegram"
 # Open-source code editor
@@ -124,11 +139,14 @@ cask "zed"
 # Collect, organise, cite, and share research sources
 cask "zotero"
 mas "QQ", id: 451108668
+mas "TencentMeeting", id: 1484048379
 mas "The Unarchiver", id: 425424353
-mas "企业微信", id: 1189898970
-mas "微信", id: 836500024
-mas "腾讯会议", id: 1484048379
+mas "WeChat", id: 836500024
+mas "WeCom", id: 1189898970
 vscode "adpyke.codesnap"
+vscode "antfu.slidev"
+vscode "avetis.tokyo-night"
+vscode "batisteo.vscode-django"
 vscode "britesnow.vscode-toggle-quotes"
 vscode "continue.continue"
 vscode "cweijan.dbclient-jdbc"
@@ -139,12 +157,16 @@ vscode "davidanson.vscode-markdownlint"
 vscode "dbaeumer.vscode-eslint"
 vscode "docker.docker"
 vscode "donjayamanne.githistory"
+vscode "donjayamanne.python-environment-manager"
+vscode "donjayamanne.python-extension-pack"
 vscode "dotjoshjohnson.xml"
 vscode "dvirtz.parquet-viewer"
 vscode "esbenp.prettier-vscode"
+vscode "fisheva.eva-theme"
 vscode "github.copilot"
 vscode "github.copilot-chat"
 vscode "github.remotehub"
+vscode "golang.go"
 vscode "gruntfuggly.todo-tree"
 vscode "hediet.debug-visualizer"
 vscode "hediet.vscode-drawio"
@@ -152,6 +174,7 @@ vscode "hnw.vscode-auto-open-markdown-preview"
 vscode "humao.rest-client"
 vscode "james-yu.latex-workshop"
 vscode "jeff-hykin.better-cpp-syntax"
+vscode "kevinrose.vsc-python-indent"
 vscode "kisstkondoros.vscode-gutter-preview"
 vscode "llvm-vs-code-extensions.vscode-clangd"
 vscode "maattdd.gitless"
@@ -160,10 +183,10 @@ vscode "mkloubert.vs-rest-api"
 vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-ceintl.vscode-language-pack-zh-hans"
+vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
-vscode "ms-python.vscode-python-envs"
 vscode "ms-toolsai.jupyter"
 vscode "ms-toolsai.jupyter-keymap"
 vscode "ms-toolsai.jupyter-renderers"
@@ -178,12 +201,15 @@ vscode "ms-vscode.cmake-tools"
 vscode "ms-vscode.cpptools"
 vscode "ms-vscode.cpptools-extension-pack"
 vscode "ms-vscode.cpptools-themes"
+vscode "ms-vscode.hexeditor"
 vscode "ms-vscode.live-server"
 vscode "ms-vscode.makefile-tools"
 vscode "ms-vscode.remote-explorer"
 vscode "ms-vscode.remote-repositories"
 vscode "mshr-h.veriloghdl"
 vscode "mutantdino.resourcemonitor"
+vscode "myriad-dreamin.tinymist"
+vscode "njpwerner.autodocstring"
 vscode "oderwat.indent-rainbow"
 vscode "orangex4.hsnips"
 vscode "pkief.material-icon-theme"
@@ -193,16 +219,15 @@ vscode "sandcastle.vscode-open"
 vscode "saoudrizwan.claude-dev"
 vscode "shd101wyy.markdown-preview-enhanced"
 vscode "simonsiefke.svg-preview"
-vscode "streetsidesoftware.code-spell-checker"
+vscode "tatsy.vscode-3d-preview"
 vscode "tauri-apps.tauri-vscode"
 vscode "techer.open-in-browser"
-vscode "tomoki1207.pdf"
 vscode "usernamehw.errorlens"
 vscode "vadimcn.vscode-lldb"
-vscode "visualstudioexptteam.intellicode-api-usage-examples"
-vscode "visualstudioexptteam.vscodeintellicode"
 vscode "vscode-icons-team.vscode-icons"
 vscode "vscodevim.vim"
+vscode "vue.volar"
+vscode "wholroyd.jinja"
 vscode "wushuaibuaa.autocomplete-english-word"
 vscode "yzhang.markdown-all-in-one"
 vscode "zaaack.markdown-editor"

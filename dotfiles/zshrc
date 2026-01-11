@@ -183,3 +183,13 @@ precmd_functions+=(_fix_cursor)
 
 # 10ms for key sequences
 KEYTIMEOUT=1
+
+# rdp to windows
+rdp() {
+    local pass=$(security find-generic-password -s "rdp_passwd" -w)
+    xfreerdp /cert:ignore /d: /p:"$pass" /v:59.66.24.118 /size:2560x1000
+}
+
+# ssh to cluster
+alias ssh-osds='ssh -i .ssh/id_osds -N -L 6443:api.ai.iiis.co:6443 ailab@js.ai.iiis.co -p 9022'
+
