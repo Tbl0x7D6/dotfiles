@@ -147,15 +147,6 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-# Sketchybar interactivity overloads
-function brew() {
-  command brew "$@" 
-
-  if [[ $* =~ "upgrade" ]] || [[ $* =~ "update" ]] || [[ $* =~ "outdated" ]]; then
-    sketchybar --trigger brew_update
-  fi
-}
-
 alias neofetch=fastfetch
 alias ls=eza
 alias cat=bat
@@ -187,7 +178,7 @@ KEYTIMEOUT=1
 # rdp to windows
 rdp() {
     local pass=$(security find-generic-password -s "rdp_passwd" -w)
-    xfreerdp /cert:ignore /d: /p:"$pass" /v:59.66.24.118 /size:2560x1000
+    xfreerdp /cert:ignore /d: /u:"be" /p:"$pass" /v:100.64.0.1 /size:2560x1000
 }
 
 # ssh to cluster

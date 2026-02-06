@@ -24,10 +24,10 @@ brew "eza"
 brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
 # OpenType text shaping engine
 brew "harfbuzz"
-# Play, record, convert, and stream audio and video
-brew "ffmpeg"
 # X11 implementation of the Remote Desktop Protocol (RDP)
 brew "freerdp"
 # Kubernetes package manager
@@ -89,11 +89,13 @@ cask "cherry-studio"
 # Continuation of Clash Verge - A Clash Meta GUI based on Tauri
 cask "clash-verge-rev"
 # Mouse and keyboard sharing utility
-cask "deskflow"
+cask "deskflow/tap/deskflow"
 # Voice and text chat software
 cask "discord"
 # Dictionary and translator app
 cask "easydict"
+# Project management software
+cask "feishu"
 cask "font-fira-code-nerd-font"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-maple-mono-nf-cn"
@@ -102,6 +104,8 @@ cask "font-sketchybar-app-font"
 cask "font-source-code-pro"
 # Web browser
 cask "google-chrome"
+# Utility to hide menu bar items
+cask "hiddenbar"
 # Free and open-source media player
 cask "iina"
 # Tool for multi-language users
@@ -223,7 +227,6 @@ vscode "tatsy.vscode-3d-preview"
 vscode "tauri-apps.tauri-vscode"
 vscode "techer.open-in-browser"
 vscode "usernamehw.errorlens"
-vscode "vadimcn.vscode-lldb"
 vscode "vscode-icons-team.vscode-icons"
 vscode "vscodevim.vim"
 vscode "vue.volar"
